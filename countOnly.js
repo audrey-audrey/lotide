@@ -9,8 +9,8 @@ const assertEqual = function(actual, expected) {
 
 };
 
-// countOnly 
-const countOnly = function (allItems, itemsToCount) {
+// countOnly
+const countOnly = function(allItems, itemsToCount) {
 
   const results = {};
 

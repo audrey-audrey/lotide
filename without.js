@@ -2,18 +2,18 @@
 const eqArrays = function (arrayFirst, arraySecond) {
 
   let output = true;
-  
+
   for (let i = 0; i < arrayFirst.length; i++) {
     if (arrayFirst[i] !== arraySecond[i]) {
       output = false;
     }
   }
-  
+
   return output;
-  
-  };
-  
-  // assertArraysEqual function => print out a message to see whether the assertion is true or not
+
+};
+
+// assertArraysEqual function => print out a message to see whether the assertion is true or not
 const assertArraysEqual = function (inputOne, inputTwo) {
 
   let result = eqArrays(inputOne, inputTwo);
@@ -28,24 +28,31 @@ const assertArraysEqual = function (inputOne, inputTwo) {
 }
 
 // without function => remove specified values from a given array
-const without = function (source, itemsToRemove) {
+// function with input parameters source and itemsToRemove
+const without = function(source, itemsToRemove) {
 
-  let modifiedArray = source;
+  // create empty array retArray
+  const retArray = [];
 
-  for (let i = 0; i < source.length; i++) {
-    for (let j = 0; j < itemsToRemove.length; j++) {
-      if (source[i] === itemsToRemove[j]) {
-        modifiedArray.splice(i, 1);
-      }
+  // iterate through each item of source
+  for (let item of source) {
+    // if itemsToRemove does NOT include any element from source proceed to next step
+    if (!itemsToRemove.includes(item)) {
+      // add source element to retArray
+      retArray.push(item);
     }
   }
-
-  return modifiedArray;
-
+  // print retArray to check result
+  console.log(retArray);
+  return retArray;
 }
 
-// Test case 
+without([1, 2, 3], [2, 1]) // => [2, 3]
+without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
+

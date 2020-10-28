@@ -47,6 +47,7 @@ const without = function(source, itemsToRemove) {
   return retArray;
 }
 
+// Test Cases
 without([1, 2, 3], [2, 1]) // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
 

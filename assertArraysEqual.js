@@ -13,8 +13,8 @@ return output;
 
 };
 
-// assertArrayEqual function
-const assertArrayEqual = function (inputOne, inputTwo) {
+// assertArraysEqual function
+const assertArraysEqual = function (inputOne, inputTwo) {
 
 let result = eqArrays(inputOne, inputTwo);
 
@@ -27,4 +27,4 @@ let result = eqArrays(inputOne, inputTwo);
 }
 
 // Test Code
-assertArrayEqual([1,1,3],[1,2,3])
+assertArraysEqual([1,1,3],[1,2,3])

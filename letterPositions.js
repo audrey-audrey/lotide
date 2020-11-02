@@ -46,7 +46,9 @@ const letterPositions = function(sentence) {
 
 };
 
-console.log(letterPositions("lighthouse in the house"));
-// Test Cases
-let testThis = letterPositions('hello');
-assertArraysEqual(testThis.h, [0]);
+module.exports = letterPositions;
+
+// console.log(letterPositions("lighthouse in the house"));
+// // Test Cases
+// let testThis = letterPositions('hello');
+// assertArraysEqual(testThis.h, [0]);

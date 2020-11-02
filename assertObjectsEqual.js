@@ -68,21 +68,23 @@ const assertObjectEqual = function (actual, expected) {
 
 }
 
-// Test
-// primitive data
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-assertObjectEqual(ab, ba); // => true
+module.exports = assertObjectEqual;
 
-const abc = { a: "1", b: "2", c: "3" };
-assertObjectEqual(ab, abc); // => false
+// // Test
+// // primitive data
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// assertObjectEqual(ab, ba); // => true
 
-// arrays
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-assertObjectEqual(cd, dc); // => true
+// const abc = { a: "1", b: "2", c: "3" };
+// assertObjectEqual(ab, abc); // => false
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertObjectEqual(cd, cd2); // => false
+// // arrays
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// assertObjectEqual(cd, dc); // => true
+
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// assertObjectEqual(cd, cd2); // => false
 
 

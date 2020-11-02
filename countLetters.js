@@ -25,8 +25,10 @@ const countLetters = function(string) {
   return results;
 };
 
-// Test cases
-let testThis = countLetters('LHL');
-assertEqual(testThis.L, 2);
+module.exports = countLetters;
 
-countLetters("lighthouse in the house");
+// // Test cases
+// let testThis = countLetters('LHL');
+// assertEqual(testThis.L, 2);
+
+// countLetters("lighthouse in the house");

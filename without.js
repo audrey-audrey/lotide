@@ -50,7 +50,7 @@ const without = function(source, itemsToRemove) {
 module.exports = without;
 
 // // Test Cases
-// without([1, 2, 3], [2, 1]) // => [2, 3]
+// console.log(without([1, 2, 3], [2, 1])) // => [2, 3]
 // without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
 
 // const words = ["hello", "world", "lighthouse"];

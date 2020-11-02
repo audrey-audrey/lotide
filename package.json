@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@audrey-audrey/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A packaged lotide folder intended for learning purposes",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/audrey-audrey/lotide.git"
   },
-  "author": "",
+  "author": "Audrey Untung (https://github.com/audrey-audrey)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/audrey-audrey/lotide/issues"
@@ -22,5 +22,6 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.2.0"
-  }
+  },
+  "dependencies": {}
 }
